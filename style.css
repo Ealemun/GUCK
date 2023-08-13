@@ -1,0 +1,64 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.first_line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    align-items: stretch;
+}
+
+h1 {
+    color: #333;
+}
+
+input[type="number"],
+select {
+    padding: 5px;
+    margin-top: 10px;
+}
+
+#result {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.images img {
+    width: 150px;
+    height: auto;
+    display: inline-block;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.img-gauche {
+    position: absolute;
+    left: 0;
+    top: 50%; /* Optionnel : Centre l'image verticalement */
+    transform: translateY(-50%); /* Optionnel : Ajuste le centrage vertical */
+    width: 30%;
+    /* clip-path: polygon(20% 0, 100% 0, 100% 100%, 20% 100%); */
+}
+
+.img-droite {
+    position: absolute;
+    right: 0;
+    top: 50%; /* Optionnel : Centre l'image verticalement */
+    transform: translateY(-50%); /* Optionnel : Ajuste le centrage vertical */
+    width: 30%;
+}

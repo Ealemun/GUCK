@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Garen Ultimate Calculator Kill</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="Garen_24.jpg" type="icon">
+</head>
+<body>
+    <img src="Garen_13 cropped.jpg" alt="Image Gauche" class="img-gauche">
+    <img src="Garen_0 cropped.jpg" alt="Image Droite" class="img-droite">
+    <div class="container">
+        <h1>GUCK: Garen Ultimate Calculator Kill</h1>
+        <div class="first_line">
+            
+            <div>
+                
+                <label for="hp">HP max de la cible:</label>
+                <input type="number" id="hp" min="0" onchange="calculateDamage()">
+            </div>
+            <div>
+                <label for="level">Niveau de l'ult:</label>
+                <select id="level" onchange="calculateDamage()">
+                    <option value="1">Niveau 1</option>
+                    <option value="2">Niveau 2</option>
+                    <option value="3">Niveau 3</option>
+                </select>
+            </div>
+
+        </div>
+        <div id="result"></div>
+        <div class="gif">
+            <img src="gif garen pushup.gif" style="width: auto; height: 400px;" class="center"/>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
